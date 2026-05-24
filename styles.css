@@ -155,7 +155,7 @@ h3 {
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1rem, 1.45vw, 1.35rem);
-  font-weight: 900;
+  font-weight: 200;
   letter-spacing: 0.04em;
   text-decoration: none;
   overflow-wrap: anywhere;
