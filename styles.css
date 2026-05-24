@@ -335,14 +335,34 @@ h3 {
   opacity: 0;
 }
 
-.phone video {
+.phone video,
+.phone iframe {
   display: block;
   width: 100%;
-  aspect-ratio: 9 / 16;
   border-radius: 24px;
-  object-fit: cover;
   background: #ddd;
+}
+
+.phone video {
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
   cursor: pointer;
+}
+
+.phone iframe {
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.horizontal-video {
+  grid-column: span 2;
+  align-self: center;
+  padding-bottom: 58px;
+}
+
+.horizontal-video::before,
+.horizontal-video::after {
+  display: none;
 }
 
 .phone h3 {
@@ -551,5 +571,10 @@ h3 {
   .phone {
     width: min(310px, 100%);
     margin-inline: auto;
+  }
+
+  .horizontal-video {
+    grid-column: 1;
+    width: 100%;
   }
 }
