@@ -354,6 +354,10 @@ h3 {
   border: 0;
 }
 
+.youtube-short iframe {
+  aspect-ratio: 9 / 16;
+}
+
 .horizontal-video {
   grid-column: span 2;
   align-self: center;
