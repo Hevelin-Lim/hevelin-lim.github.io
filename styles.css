@@ -76,6 +76,11 @@ a {
   text-align: left;
 }
 
+.hero-under-title {
+  width: min(760px, 88%);
+  margin-inline: auto;
+}
+
 .kicker {
   margin: 0 0 18px;
   font-family: Georgia, "Times New Roman", serif;
@@ -127,7 +132,7 @@ h3 {
 }
 
 .hero-label {
-  width: min(700px, 100%);
+  width: 100%;
   margin-inline: auto;
   border-block: 3px solid var(--ink);
   padding: 22px 0 16px;
@@ -159,7 +164,7 @@ h3 {
 }
 
 .intro-copy {
-  width: min(760px, 100%);
+  width: 100%;
   margin: clamp(86px, 10vw, 126px) auto 0;
   text-align: center;
 }
@@ -436,6 +441,7 @@ h3 {
   }
 
   .hero-label,
+  .hero-under-title,
   .intro-copy {
     margin-inline: auto;
   }
@@ -486,6 +492,10 @@ h3 {
   .hero-label {
     width: 100%;
     padding-block: 16px 12px;
+  }
+
+  .hero-under-title {
+    width: 100%;
   }
 
   .hero-label .kicker {
