@@ -200,24 +200,5 @@
         </div>
       </section>
     </main>
-    <script>
-      document.querySelectorAll(".phone video").forEach((video) => {
-        video.removeAttribute("controls");
-
-        const showControls = () => {
-          video.setAttribute("controls", "");
-        };
-
-        const hideControls = () => {
-          video.removeAttribute("controls");
-        };
-
-        video.addEventListener("mouseenter", showControls);
-        video.addEventListener("mouseleave", hideControls);
-        video.addEventListener("focus", showControls);
-        video.addEventListener("blur", hideControls);
-        video.addEventListener("touchstart", showControls, { passive: true });
-      });
-    </script>
   </body>
 </html>

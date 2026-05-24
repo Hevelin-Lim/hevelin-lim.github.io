@@ -298,6 +298,7 @@ h3 {
   position: relative;
   border-radius: 34px;
   padding: 11px 11px 58px;
+  overflow: visible;
 }
 
 .phone::before {
@@ -311,6 +312,27 @@ h3 {
   background: #111;
   transform: translateX(-50%);
   z-index: 2;
+}
+
+.phone::after {
+  content: "";
+  position: absolute;
+  right: 11px;
+  bottom: 58px;
+  left: 11px;
+  height: 48px;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  background: linear-gradient(to top, rgba(16, 16, 16, 0.86), rgba(16, 16, 16, 0));
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 160ms ease;
+  z-index: 3;
+}
+
+.phone:hover::after,
+.phone:focus-within::after {
+  opacity: 0;
 }
 
 .phone video {
